@@ -14,7 +14,6 @@ use Rack::Session::Cookie, :key => 'rack.session',
 GAME = Game.new
 
   get '/' do
-  	puts GAME
     erb :homepage
   end
 
@@ -43,8 +42,6 @@ GAME = Game.new
     erb :play_game
   end
 
-
-#Default cucumber-sinatra lines
 # start the server if ruby file executed directly
   run! if app_file == $0
 end

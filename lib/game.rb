@@ -17,9 +17,9 @@ class Game
 	end
 
 	def deploy_ships_for(player)
-		ship_to_be_deployed = player.ships_to_deploy.pop
+		ship_to_be_deployed = player.ships_to_deploy
 	end
-	
+
 	# def deploy_ships_for(player)
 	# 	until player.ships_to_deploy.empty?
 	# 		player.board.nice_display
