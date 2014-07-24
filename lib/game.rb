@@ -2,12 +2,19 @@ require './files'
 
 class Game
 
-	def initialize(player_one: :player_one, player_two: :player_two)
-		@player_one = player_one
-		@player_two = player_two
+	def initialize
+		@players = []
 	end
 
 	attr_reader :player_one, :player_two
+
+	def add_(player)
+		@players << player
+	end
+
+	def enough_players?
+		@players.count == 2
+	end
 
 	def deploy_ships_for(player)
 		until player.ships_to_deploy.empty?

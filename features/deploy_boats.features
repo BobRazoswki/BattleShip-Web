@@ -1,0 +1,6 @@
+Feature: start to place boats for both opponents
+
+  Scenario: placings ships
+    Given I am on play_game
+    When I press "Place Ships"
+    Then I should see "What's your name?"
