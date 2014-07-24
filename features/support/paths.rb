@@ -1,5 +1,4 @@
 # Taken from the cucumber-rails project.
-
 module NavigationHelpers
   # Maps a name to a path. Used by the
   #
@@ -16,7 +15,7 @@ module NavigationHelpers
     when /newgame/
       '/newgame'
 
-      when /getreadytoplay/
+    when /getreadytoplay/
       '/getreadytoplay'
 
     when /waiting_page/
@@ -32,6 +31,7 @@ module NavigationHelpers
       raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
         "Now, go and add a mapping in #{__FILE__}"
     end
+
   end
 end
 

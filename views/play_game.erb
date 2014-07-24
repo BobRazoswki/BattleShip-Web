@@ -1,20 +1,25 @@
 <!DOCTYPE html>
+
 <html>
-	<body>
 
-	<table style="width:300px">
-		<% GAME.session[:player].board.render_display.each do|row|
-				 %>
+	<head>
+		<link href="style.css" rel="stylesheet">
+	</head>
 
-		<tr><% row %>
-				<% row %>
-<%row.each do|column| %> 
-		<td> <% column %> </td>
-		<% column %>
+<body>
+
+	<table>
+			<% @rows.each do |row| %>
+		<tr>
+			<% row.each do |col| %>
+		<td><%= col %></td>
+			<% end %>
 		</tr>
-		<% end %>
-		<% end %>
+			<% end %>
 	</table>
+
+	<p> Please enter the coordinates of your ships </p>
+		<%= @deploy %>
 
 	</body>
 </html>
