@@ -1,1 +1,20 @@
-GAME.deploy_ships_for(session[:player]
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<table style="width:300px">
+		<% GAME.session[:player].board.render_display.each do|row|
+				 %>
+
+		<tr><% row %>
+				<% row %>
+<%row.each do|column| %> 
+		<td> <% column %> </td>
+		<% column %>
+		</tr>
+		<% end %>
+		<% end %>
+	</table>
+
+	</body>
+</html>

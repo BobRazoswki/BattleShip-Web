@@ -58,7 +58,7 @@ class Game
 	private
 
 	def get_coordinates_from_player
-		Coordinates.new(gets.chomp.split)
+		# Coordinates.new(gets.chomp.split)
 	end
 
 end
